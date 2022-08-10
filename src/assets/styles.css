@@ -85,6 +85,14 @@ main .todo-input{
      align-items: center;
      justify-content: space-around;
 }
+main .todo-input .btn{
+    background: linear-gradient(to right,hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
 main .todo-tasks{
     background-color: var(--very-dark-desaturated-blue);
      height: 50px;
@@ -100,11 +108,27 @@ main .todo-tasks p{
     flex: 1;
     padding-left: 25px;
 }
+main .todo-tasks input{
+        -webkit-appearance: none;
+        border: 1px solid hsl(234, 11%, 52%);
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin-right: 10px;
+        cursor: pointer;
+}
+main .todo-tasks input:checked{
+        background: url('/images/icon-check.svg'), linear-gradient(to right,hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+        background-repeat: no-repeat;
+        background-position: center;
+        border:none;
+      
+}
 main .todo-input span, main .todo-tasks span{
     border: 1px solid var(--dark-grayish-blue);
     height: 20px;
     width: 20px;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 main .todo-input span:hover{
     border: 1px solid var(--check-background-gradient-2);
